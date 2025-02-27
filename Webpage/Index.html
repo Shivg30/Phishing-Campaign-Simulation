@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title> 
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <div class="form">
+            <header id="loginHeader">Login</header><br>
+            <form id="loginForm" action="submit.php" method="POST">
+                <label for="emailInput" id="emailLabelLogin"></label>
+                <input name="email" id="emailInput" type="email" placeholder="Enter your email" autocomplete="email" required>
+                <div id="emailError" class="error-message"></div>
+
+                <label for="passwordInput" id="passwordLabelLogin"></label>
+                <input name="pwd" id="passwordInput" type="password" placeholder="Enter your password" required>
+
+                <a href="forgot-password.html">Forgot Password?</a>
+                <input id="loginButton" type="submit" class="button" value="Login">
+            </form>
+        </div>
+    </div>
+</body>
+</html>
